@@ -1,0 +1,2 @@
+Installed chaincodes on peer:
+Package ID: sacc_1:306e0348c096ae4cf518d37145574334d7ffd1c398a2c2f8f30098b15a5bff28, Label: sacc_1

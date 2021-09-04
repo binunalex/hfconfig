@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export $NODENUMBER $1
+changeOrg $NODENUMBER 1
