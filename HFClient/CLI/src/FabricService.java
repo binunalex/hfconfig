@@ -150,15 +150,15 @@ public class FabricService {
 				hftransaction("a","b"+i);
 			}
 			long stt1 = System.currentTimeMillis();
-			System.out.println("Various queries: 19.964 TPS");
-			//System.out.println(stt1-stt);
+			System.out.println("Modification");
+			System.out.println(stt1-stt);
 			
 			for (int i=0; i<1;i++) {
 				hfquery("a");
 			}
 			long stt2 = System.currentTimeMillis();
-            //System.out.println("Query: ");
-			//System.out.println(stt2-stt1);
+            System.out.println("Query: ");
+			System.out.println(stt2-stt1);
             
 
         } catch (Exception e) {
