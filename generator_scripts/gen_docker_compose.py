@@ -3,8 +3,8 @@ from generator_scripts.format import bcolors, NetworkConfiguration
 import os
 from ruamel.yaml.scalarstring import SingleQuotedScalarString
 
-PEER_IMAGE = "hyperledger/fabric-peer:2.0"
-ORDERER_IMAGE = "hyperledger/fabric-orderer:2.0"
+PEER_IMAGE = "peer:compiled" #"hyperledger/fabric-peer:2.0"
+ORDERER_IMAGE = "orderer:compiled" #"hyperledger/fabric-orderer:2.0"
 CERT_AUTH_IMAGE = "hyperledger/fabric-ca:1.4"
 CLIENT_IMAGE = "hyperledger/fabric-tools"
 STORAGE_IMAGE = "hyperledger/fabric-couchdb"
