@@ -16,4 +16,17 @@ export GOPATH=$HOME/gopath
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=/root/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH
 
+After installing, launch the Hyperledger Fabric:
+
+. setContext 0 #here you set the "anchor peer"
+./generateAll.sh
+
+Wait for a while. Then run a client:
+
+cd HFClient
+./launchClient.sh
+
+You will be running a few queries - moidfication and fetch
+
+
 	
