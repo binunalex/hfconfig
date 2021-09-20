@@ -1,4 +1,5 @@
-We use Markdown. You can even [link to Markdown](https://guides.github.com/features/mastering-markdown/#syntax)
+We use Markdown: [link to Markdown](https://guides.github.com/features/mastering-markdown/#syntax)
+This is an <h1> tag
 
 Installation Instructions:
 
