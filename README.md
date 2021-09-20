@@ -1,3 +1,5 @@
+We use Markdown. You can even [link to Markdown](https://guides.github.com/features/mastering-markdown/#syntax)
+
 Installation Instructions:
 
 Install prerequisites:
