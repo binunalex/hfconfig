@@ -4,13 +4,21 @@ We use Markdown and Ubuntu 18: [link to Markdown](https://guides.github.com/feat
 
 <h2> Prerequisites: </h2>
 
+Assuming the $HOME variable points to your home directory <br>
+
 First install [Java 11](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04). <br>
 Then install [Python 3.7](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/) <br>
 Install [NodeJS](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
 Install [Docker](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
-Install [Golang](https://tecadmin.net/install-go-on-ubuntu/) <br>
+Download Golangpdate && sudo apt-get -y update
+* wget https://dl.google.com/go/go1.16.4.linux-amd64.tar.gz
+* sudo tar -xvf go1.16.4.linux-amd64.tar.gz
 
-Assuming the $HOME variable points to your home directory, setup the Go-related environment variables as follows: <br>
+
+Now your Go distribution resides in $HOME/go. <br>
+
+
+etup the Go-related environment variables as follows: <br>
 
 export GOROOT=$HOME/go	<br>
 export GOPATH=$HOME/gopath	<br>
