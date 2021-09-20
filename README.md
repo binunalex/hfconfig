@@ -1,7 +1,5 @@
 We use Markdown: [link to Markdown](https://guides.github.com/features/mastering-markdown/#syntax)
-This is an <h1> tag
-
-Installation Instructions:
+<h1> Installation Instructions: </h1>
 
 Install prerequisites:
 	Java 11, https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
