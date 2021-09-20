@@ -1,12 +1,12 @@
-We use Markdown: [link to Markdown](https://guides.github.com/features/mastering-markdown/#syntax)
+We use Markdown and Ubuntu 18: [link to Markdown](https://guides.github.com/features/mastering-markdown/#syntax)
 <h1> Installation Instructions: </h1>
 
-Install prerequisites:
-	Java 11, https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
-	Python >= 3.7, https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
-	NodeJS 10 or 12, https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/
-	Docker, https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/
-	Golang, https://tecadmin.net/install-go-on-ubuntu/
+<h2> Prerequisites: </h2>
+	[Java 11](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04)
+	[Python 3.7](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/)
+	[NodeJS](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/)
+	[Docker](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/)
+	[Golang](https://tecadmin.net/install-go-on-ubuntu/)
 
 Install Hyperledger Fabric Binaries and Samples: https://hyperledger-fabric.readthedocs.io/en/release-2.2/install.html#
 
