@@ -12,10 +12,10 @@ Install [Golang](https://tecadmin.net/install-go-on-ubuntu/) <br>
 
 Assuming the $HOME variable points to your home directory, setup the Go-related environment variables as follows: <br>
 
-export GOROOT=$HOME/go <br>
-export GOPATH=$HOME/gopath <br>
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin <br>
-export PATH=/root/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH <br>
+export GOROOT=$HOME/go	<br>
+export GOPATH=$HOME/gopath	<br>
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin	<br>
+export PATH=/root/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH 	<br>
 
 Install [Hyperledger Fabric Binaries and Samples](https://hyperledger-fabric.readthedocs.io/en/release-2.2/install.html#) <br>
 
