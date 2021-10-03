@@ -80,8 +80,8 @@ Now launch the prototype:  <br>
 
 Wait for a while. Then run a client:  <br> 
 
-cd HFClient  <br> 
-./launchClient.sh  <br> 
+``` cd HFClient```   <br> 
+```./launchClient.sh```  <br> 
 
 You will be running a few queries - modification and fetch.l
 
