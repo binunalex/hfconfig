@@ -28,16 +28,16 @@ Install [Hyperledger Fabric Binaries and Samples](https://hyperledger-fabric.rea
 
 Configure the Go-related environment variables as follows: <br>
 
-``` export GOROOT=$HOME/go ``` 	<br>
-``` export GOPATH=$HOME/gopath ``` 	<br>
-``` export PATH=$PATH:$GOROOT/bin:$GOPATH/bin ``` 	<br>
-``` export PATH=$HOME/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH ```  	<br>
+``` echo 'GOROOT=$HOME/go' >> ~/.bashrc ``` 	<br>
+``` echo 'GOPATH=$HOME/gopath' >> ~/.bashrc >> ~/.bashrc ``` <br>
+``` echo 'PATH=$PATH:$GOROOT/bin:$GOPATH/bin' ``` <br> 
+``` echo 'PATH=$HOME/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH' >> ~/.bashrc```  <br>
 
 <h2> Launch the prototype: </h2>
 
 
 After installing, launch the Hyperledger Fabric:
-
+  
 . setContext 0 #here you set the "anchor peer"
 ./generateAll.sh
 
