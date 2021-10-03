@@ -10,29 +10,25 @@ First install [Java 11](https://www.digitalocean.com/community/tutorials/how-to-
 Then install [Python 3.7](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/) <br>
 Install [NodeJS](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
 Install [Docker](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
-Download Golangpdate && sudo apt-get -y update
+Download and install Golang:
+* sudo apt-get -y update && sudo apt-get -y upgrade
 * wget https://dl.google.com/go/go1.16.4.linux-amd64.tar.gz
 * sudo tar -xvf go1.16.4.linux-amd64.tar.gz
 
 
 Now your Go distribution resides in $HOME/go. <br>
 
+Create the folder **gopath** you will out all your Go projects into: mkdir -p $HOME/gopath/src/github.com/hyperledger/fabric-samples
 
-etup the Go-related environment variables as follows: <br>
+Configure the Go-related environment variables as follows: <br>
 
 export GOROOT=$HOME/go	<br>
 export GOPATH=$HOME/gopath	<br>
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin	<br>
-export PATH=/root/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH 	<br>
+export PATH=$HOME/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH 	<br>
 
 Install [Hyperledger Fabric Binaries and Samples](https://hyperledger-fabric.readthedocs.io/en/release-2.2/install.html#) <br>
 
-The Go-related environment variables should be like these :
-
-export GOROOT=$HOME/go
-export GOPATH=$HOME/gopath
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-export PATH=/root/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH
 
 After installing, launch the Hyperledger Fabric:
 
