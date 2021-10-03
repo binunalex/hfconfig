@@ -36,6 +36,26 @@ Configure the Go-related environment variables as follows: <br>
 
 <h3> Install Hyperledger Fabric from sources: </h3>
 
+This section is optional and we will use it only in advanced stages when Hyperledger behavior will be altered. 
+
+Change the directory into the Fabric projects:
+``` cd $HOME/gopath/src/github.com/hyperledger ```
+
+Download the source code as described [here](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04):
+``` git clone https://github.com/hyperledger/fabric.git ``` 
+``` cd $GOPATH/src/github.com/hyperledger/fabric ```  
+
+To rebuild the entire Hyperledger distribution from scratch, you have to run the commands:
+``` make dist-clean all ``` 
+``` make clean ```
+``` make build ```
+``` make docker ```
+
+
+
+
+
+
 <h2> Launch the prototype: </h2>
 
 
