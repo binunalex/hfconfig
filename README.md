@@ -66,10 +66,12 @@ First clone the example repository into the folder ``` $HOME/gopath/src/github.c
 Then run the following commands: <br>
 ```echo "127.0.0.1 ca.org1.dredev.de" >> /etc/hosts``` <br>
 ```echo "127.0.0.1 orderer1.dredev.de" >> /etc/hosts``` <br>
-```for i in {1..5}``` <br>
+```for i in {1..10}``` <br>
 ```do```<br>
 	```echo "127.0.0.1 peer$i.org1.dredev.de" >> /etc/hosts``` <br> 
 ```done```<br>
+
+This script associates the DNS names of all Hyperledger members (peers,orderers etc) with the local IP. The associations are published in the file [/etc/hosts](https://techpiezo.com/linux/etc-hosts-hosts-file-in-ubuntu-distribution/) which serves as the "DNS pool" of Ubuntu. That is, the entire Hyperledger runs locally. In the future we will set different IPs, making Hyperledger run on a cloud.
 
 After installing, launch the Hyperledger Fabric:
   
