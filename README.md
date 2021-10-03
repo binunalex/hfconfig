@@ -19,8 +19,8 @@ Download and install Golang:
 Now your Go distribution resides in $HOME/go. <br>
 
 Create the folder **gopath** you will out all your Go projects into: <br>
-mkdir -p $HOME/gopath/src/github.com/hyperledger <br>
-cd $HOME/gopath/src/github.com/hyperledger   <br>
+```mkdir -p $HOME/gopath/src/github.com/hyperledger``` <br>
+```cd $HOME/gopath/src/github.com/hyperledger```   <br>
 
 Install [Hyperledger Fabric Binaries and Samples](https://hyperledger-fabric.readthedocs.io/en/release-2.2/install.html#) into the above mentioned folder: <br>
 curl -sSL https://bit.ly/2ysbOFE | bash -s
