@@ -41,7 +41,7 @@ This section is optional and we will use it only in advanced stages when Hyperle
 Change the directory into the Fabric projects:
 ``` cd $HOME/gopath/src/github.com/hyperledger ```
 
-Download the source code as described [here](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04):
+Download the source code as described [here](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04): <br>
 ``` git clone https://github.com/hyperledger/fabric.git ```  <br>
 ``` cd $GOPATH/src/github.com/hyperledger/fabric ```   <br>
 
@@ -51,8 +51,8 @@ To rebuild the entire Hyperledger distribution from scratch, you have to run the
 ``` make build ```  <br>
 ``` make docker ```  <br>
 
-
-
+After finishing the process run the command ``` docker images ``` and you will find the most up-to-date Docker images for Hyperledger. They are preceded by
+the **hyperledger/** word, like **hyperledger/fabric-orderer"".
 
 
 
