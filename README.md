@@ -10,10 +10,11 @@ First install [Java 11](https://www.digitalocean.com/community/tutorials/how-to-
 Then install [Python 3.7](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/) <br>
 Install [NodeJS](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
 Install [Docker](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
-Download and install Golang:
-* sudo apt-get -y update && sudo apt-get -y upgrade
-* wget https://dl.google.com/go/go1.16.4.linux-amd64.tar.gz
-* sudo tar -xvf go1.16.4.linux-amd64.tar.gz
+Download and install Golang: <br>
+
+```sudo apt-get -y update && sudo apt-get -y upgrade```  <br>
+```wget https://dl.google.com/go/go1.16.4.linux-amd64.tar.gz``` <br>
+```sudo tar -xvf go1.16.4.linux-amd64.tar.gz```<br>
 
 
 Now your Go distribution resides in $HOME/go. <br>
@@ -23,7 +24,7 @@ Create the folder **gopath** you will out all your Go projects into: <br>
 ```cd $HOME/gopath/src/github.com/hyperledger```   <br>
 
 Install [Hyperledger Fabric Binaries and Samples](https://hyperledger-fabric.readthedocs.io/en/release-2.2/install.html#) into the above mentioned folder: <br>
-curl -sSL https://bit.ly/2ysbOFE | bash -s
+``` curl -sSL https://bit.ly/2ysbOFE | bash -s ```
 
 Configure the Go-related environment variables as follows: <br>
 
