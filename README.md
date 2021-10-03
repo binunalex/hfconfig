@@ -61,8 +61,15 @@ the **hyperledger/** word, like **hyperledger/fabric-orderer**. These images wil
 <h2> Launch the prototype: </h2>
 
 First clone the example repository into the folder ``` $HOME/gopath/src/github.com/hyperledger/fabric-samples``` :
-git clone 
+``` git clone https://github.com/binunalex/hfconfig.git ```
 
+Then run the following commands: <br>
+```echo "127.0.0.1 ca.org1.dredev.de" >> /etc/hosts``` <br>
+```echo "127.0.0.1 orderer1.dredev.de" >> /etc/hosts``` <br>
+```for i in {1..5}``` <br>
+```do``` <br>
+	```echo "127.0.0.1 peer$i.org1.dredev.de" >> /etc/hosts <br>```
+```done``` <br>
 
 After installing, launch the Hyperledger Fabric:
   
