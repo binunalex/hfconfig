@@ -73,17 +73,17 @@ Then run the following commands: <br>
 
 This script associates the DNS names of all Hyperledger members (peers,orderers etc) with the local IP. The associations are published in the file [/etc/hosts](https://techpiezo.com/linux/etc-hosts-hosts-file-in-ubuntu-distribution/) which serves as the "DNS pool" of Ubuntu. That is, the entire Hyperledger runs locally. In the future we will set different IPs, making Hyperledger run on a cloud.
 
-After installing, launch the Hyperledger Fabric:
+Now launch the prototype:  <br> 
   
-. setContext 0 #here you set the "anchor peer"
-./generateAll.sh
+``` . setContext 0 ``` <br> 
+``` ./generateAll.sh```   <br> 
 
-Wait for a while. Then run a client:
+Wait for a while. Then run a client:  <br> 
 
-cd HFClient
-./launchClient.sh
+cd HFClient  <br> 
+./launchClient.sh  <br> 
 
-You will be running a few queries - moidfication and fetch
+You will be running a few queries - modification and fetch.l
 
 
 	
