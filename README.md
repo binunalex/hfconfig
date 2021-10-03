@@ -30,8 +30,11 @@ Configure the Go-related environment variables as follows: <br>
 
 ``` echo 'GOROOT=$HOME/go' >> ~/.bashrc ``` 	<br>
 ``` echo 'GOPATH=$HOME/gopath' >> ~/.bashrc >> ~/.bashrc ``` <br>
-``` echo 'PATH=$PATH:$GOROOT/bin:$GOPATH/bin' ``` <br> 
+``` echo 'PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.bashrc ``` <br> 
 ``` echo 'PATH=$HOME/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH' >> ~/.bashrc```  <br>
+``` source ~/.bashrc ```
+
+<h3> Install Hyperledger Fabric from sources: </h3>
 
 <h2> Launch the prototype: </h2>
 
