@@ -60,6 +60,9 @@ the **hyperledger/** word, like **hyperledger/fabric-orderer**. These images wil
 
 <h2> Launch the prototype: </h2>
 
+First clone the example repository into the folder ``` $HOME/gopath/src/github.com/hyperledger/fabric-samples``` :
+git clone 
+
 
 After installing, launch the Hyperledger Fabric:
   
