@@ -67,9 +67,9 @@ Then run the following commands: <br>
 ```echo "127.0.0.1 ca.org1.dredev.de" >> /etc/hosts``` <br>
 ```echo "127.0.0.1 orderer1.dredev.de" >> /etc/hosts``` <br>
 ```for i in {1..5}``` <br>
-```do``` <br>
+```do```<br>
 	```echo "127.0.0.1 peer$i.org1.dredev.de" >> /etc/hosts <br>```
-```done``` <br>
+```done```<br>
 
 After installing, launch the Hyperledger Fabric:
   
