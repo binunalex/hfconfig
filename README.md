@@ -52,7 +52,7 @@ To rebuild the entire Hyperledger distribution from scratch, you have to run the
 ``` make docker ```  <br>
 
 After finishing the process run the command ``` docker images ``` and you will find the most up-to-date Docker images for Hyperledger. They are preceded by
-the **hyperledger/** word, like **hyperledger/fabric-orderer"".
+the **hyperledger/** word, like **hyperledger/fabric-orderer**. These images will appear in the **images** section of a file **docker-compose.yaml**. that will be used in any setting representing a Hyperledger instance as a Docker Compose swarm.
 
 
 
