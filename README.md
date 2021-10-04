@@ -60,8 +60,12 @@ the **hyperledger/** word, like **hyperledger/fabric-orderer**. These images wil
 
 <h2> Launch the prototype: </h2>
 
-First clone the example repository into the folder ``` $HOME/gopath/src/github.com/hyperledger/fabric-samples``` :
-``` git clone https://github.com/binunalex/hfconfig.git ```
+Clone the example repository into the folder and set up the envoronment: <br>
+``` $HOME/gopath/src/github.com/hyperledger/fabric-samples``` <br>
+``` git clone https://github.com/binunalex/hfconfig.git ```   <br>
+``` cd hfconfig```   <br>
+``` echo "export PROTPATH=$(pwd)" >>~/.bashrc```   <br>
+
 
 Then run the following commands: <br>
 ```echo "127.0.0.1 ca.org1.dredev.de" >> /etc/hosts``` <br>
