@@ -3,7 +3,7 @@ networks:
   byfn:
 services:
   ca.org1.dredev.de:
-    image: hyperledger/fabric-ca:1.4
+    image: hyperledger/fabric-ca:latest
     environment:
     - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
     - FABRIC_CA_SERVER_CA_NAME=ca.org1.dredev.de
@@ -25,7 +25,7 @@ services:
     - byfn
   orderer1.dredev.de:
     container_name: orderer1.dredev.de
-    image: orderer:compiled
+    image: hyperledger/fabric-orderer:latest
     environment:
     - ORDERER_HOST=orderer1.dredev.de
     - ORDERER_GENERAL_LOGLEVEL=debug
@@ -60,7 +60,7 @@ services:
     - byfn
   peer0.org1.dredev.de:
     container_name: peer0.org1.dredev.de
-    image: peer:compiled
+    image: hyperledger/fabric-peer:latest
     environment:
     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
     - CORE_LOGGING_PEER=debug
@@ -113,7 +113,7 @@ services:
     - byfn
   peer1.org1.dredev.de:
     container_name: peer1.org1.dredev.de
-    image: peer:compiled
+    image: hyperledger/fabric-peer:latest
     environment:
     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
     - CORE_LOGGING_PEER=debug
@@ -166,7 +166,7 @@ services:
     - byfn
   peer2.org1.dredev.de:
     container_name: peer2.org1.dredev.de
-    image: peer:compiled
+    image: hyperledger/fabric-peer:latest
     environment:
     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
     - CORE_LOGGING_PEER=debug
@@ -219,7 +219,7 @@ services:
     - byfn
   peer3.org1.dredev.de:
     container_name: peer3.org1.dredev.de
-    image: peer:compiled
+    image: hyperledger/fabric-peer:latest
     environment:
     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
     - CORE_LOGGING_PEER=debug
@@ -272,7 +272,7 @@ services:
     - byfn
   peer4.org1.dredev.de:
     container_name: peer4.org1.dredev.de
-    image: peer:compiled
+    image: hyperledger/fabric-peer:latest
     environment:
     - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
     - CORE_LOGGING_PEER=debug
@@ -325,7 +325,7 @@ services:
     - byfn
   cli:
     container_name: cli
-    image: hyperledger/fabric-tools
+    image: hyperledger/fabric-tools:latest
     tty: true
     environment:
     - GOPATH=/opt/gopath

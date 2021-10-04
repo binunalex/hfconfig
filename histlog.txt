@@ -1,0 +1,1000 @@
+ 1062  . setPeer.sh 2
+ 1063  . invoke.sh \"a\" \"50\"
+ 1064  . setPeer.sh 1
+ 1065  . query.sh \"a\"
+ 1066  . invoke.sh \"a\" \"60\"
+ 1067  . setPeer.sh 2
+ 1068  . query.sh \"a\"
+ 1069  export X=$(python -c "print("-"*1000)")
+ 1070  export X=$(python -c "print('-'*1000)")
+ 1071  echo $X
+ 1072  . invoke.sh \"a\" \"$X\"
+ 1073  . setPeer.sh 1
+ 1074  . query.sh \"a\"
+ 1075  ./setContext.sh 
+ 1076  . setContext.sh 
+ 1077  cd ..
+ 1078  ls
+ 1079  cd fabric
+ 1080  ls
+ 1081  make dist-all 
+ 1082  make docker
+ 1083  make clean
+ 1084  make docker
+ 1085  echo $GOPATH
+ 1086  echo $GOROOT
+ 1087  nano ~/.bashrc
+ 1088  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1089  ls
+ 1090  cat setContext.sh 
+ 1091  ls
+ 1092  cat chaincodes/go/sacc/sacc.go 
+ 1093  geany chaincodes/go/sacc/sacc.go 
+ 1094  ls
+ 1095  cat setContext.sh 
+ 1096  source setContext.sh 
+ 1097  cat generateAll.sh 
+ 1098  ./generateAll.sh 
+ 1099  rm sacc.tar.gz 
+ 1100  ./generateAll.sh 
+ 1101  . setPeer.sh 0
+ 1102  cat setPeer.sh 
+ 1103  export X=$(python -c "print('-'*10000)")
+ 1104  echo $X
+ 1105  echo $NODENUMBER 
+ 1106  . invoke.sh \"a\" \"$X\"
+ 1107  echo $NODENUMBER 
+ 1108  . setPeer.sh 1
+ 1109  . query.sh \"a\"
+ 1110  cd ~/gopath/src/github.com/hyperledger/fabric
+ 1111  ls
+ 1112  docker images
+ 1113  make clean && make docker
+ 1114  cd ~/gopath/src/github.com/hyperledger/fabric
+ 1115  cd ..
+ 1116  cd fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1117  ls
+ 1118  find / -name 'eclipse'
+ 1119  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1120  ls
+ 1121  rm sacc.tar.gz 
+ 1122  cat setContext.sh 
+ 1123  . setContext.sh 
+ 1124  cat generateAll.sh 
+ 1125  ./generateAll.sh 
+ 1126  rm sacc.tar.gz 
+ 1127  ./generateAll.sh 
+ 1128  ls
+ 1129  cat setPeer.sh
+ 1130  . setPeer.sh
+ 1131  . setPeer.sh 0
+ 1132  export X=$(python -c "print('-'*10000)")
+ 1133  . invoke.sh \"a\" \"$X\"
+ 1134  . setPeer.sh 2
+ 1135  . query.sh \"a\"
+ 1136  ls
+ 1137  cp setContext.sh runScript.sh
+ 1138  geany runScript.sh &
+ 1139  . runScript.sh 
+ 1140  . query.sh \"Key1\"
+ 1141  . query.sh \"Key2\"
+ 1142  . runScript.sh 
+ 1143  . query.sh \"Key2\"
+ 1144  . query.sh \"Key1\"
+ 1145  cp runScript.sh fetchScript.sh
+ 1146  geany fetchScript.sh 
+ 1147  cp runScript.sh addScript.sh
+ 1148  nano addScript.sh 
+ 1149  ./addScript.sh 1
+ 1150  ./fetchScript.sh 2
+ 1151  time ./addScript.sh 1
+ 1152  time ./fetchScript.sh 2
+ 1153  nano addScript.sh 
+ 1154  apt install bc
+ 1155  ./addScript.sh 
+ 1156  nano addScript.sh 
+ 1157  ./addScript.sh 1 100
+ 1158  geany addScript.sh &
+ 1159  geany fetchScript.sh &
+ 1160  ./fetchScript.sh 0
+ 1161  ./addScript.sh 1 100
+ 1162  cat writes100.csv 
+ 1163  libreoffice writes100.csv 
+ 1164  ./fetchScript.sh 0
+ 1165  cat fetches.csv 
+ 1166  cat invoke.sh 
+ 1167  cd ..
+ 1168  ls
+ 1169  cd 
+ 1170  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator
+ 1171  ls
+ 1172  \\
+ 1173  find / -name 'connection*.json'
+ 1174  nano /root/gopath/src/github.com/hyperledger/fabric-samples/asset-transfer-basic/chaincode-external/connection.json
+ 1175  nano /root/gopath/src/github.com/hyperledger/fabric-AM/fastfabric/scripts/client/connection.json
+ 1176  cd ../asset-transfer-basic/
+ 1177  ls
+ 1178  cd application-javascript/
+ 1179  ls
+ 1180  npm install
+ 1181  find / -name 'connection*.yaml'
+ 1182  cd ..
+ 1183  ls
+ 1184  cp -rf application-go/ ../Hyperledger-Fabric2-0-configurator/
+ 1185  cd ../Hyperledger-Fabric2-0-configurator/
+ 1186  cd application-go/
+ 1187  go build
+ 1188  ls
+ 1189  ./asset-transfer-basic 
+ 1190  go build
+ 1191  ./asset-transfer-basic 
+ 1192  go build
+ 1193  ./asset-transfer-basic 
+ 1194  ls ../crypto-config/peerOrganizations/org1.dredev.de/users/User1@org1.dredev.de/msp/signcerts/
+ 1195  ls ../crypto-config/peerOrganizations/org1.dredev.de/users/User1@org1.dredev.de/msp/
+ 1196  ls ../crypto-config/peerOrganizations/org1.dredev.de/users/User1@org1.dredev.de/msp/keystore/priv_sk 
+ 1197  go build
+ 1198  ./asset-transfer-basic 
+ 1199  ls crypto-config/peerOrganizations/org1.dredev.de/users/User1@org1.dredev.de/msp/signcerts/
+ 1200  ls ../crypto-config/peerOrganizations/org1.dredev.de/users/User1@org1.dredev.de/msp/signcerts/
+ 1201  go build
+ 1202  ./asset-transfer-basic 
+ 1203  ls
+ 1204  ls ..
+ 1205  go build
+ 1206  ./asset-transfer-basic 
+ 1207  cd ..
+ 1208  ls
+ 1209  go build
+ 1210  cd application-go/
+ 1211  go build
+ 1212  ./asset-transfer-basic 
+ 1213  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1214  cd ~/
+ 1215  git clone https://github.com/JulianD267/Hyperledger-Fabric2-0-configurator.git -b Blockchain_Dumper
+ 1216  cd Hyperledger-Fabric2-0-configurator/
+ 1217  ks
+ 1218  ls
+ 1219  cd ~
+ 1220  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1221  cd Hyperledger-Fabric2-0-configurator/Blockchain_Dumper/
+ 1222  ls
+ 1223  nano cp_certs.sh 
+ 1224  cat cp_certs.sh 
+ 1225  nano cp_certs.sh 
+ 1226  echo $GOPATH
+ 1227  nano cp_certs.sh 
+ 1228  ./cp_certs.sh 
+ 1229  ls
+ 1230  nano cp_certs.sh 
+ 1231  ./cp_certs.sh 
+ 1232  ls
+ 1233  ll
+ 1234  nano cp_certs.sh 
+ 1235  cd src/
+ 1236  ls
+ 1237  cd main/
+ 1238  ls
+ 1239  cd resources/
+ 1240  ls
+ 1241  cd fabricConfig/
+ 1242  ls
+ 1243  cd ~/gopath/src/github.com/hyperledger/fabric-samples/
+ 1244  ls
+ 1245  cd Hyperledger-Fabric2-0-configurator/
+ 1246  ls
+ 1247  rm sacc.tar.gz 
+ 1248  . setContext.sh 
+ 1249  ./generateAll.sh 
+ 1250  ls /home/alex/eclipse-workspace/BCConn/target/classes/fabricConfig
+ 1251  ls /home/alex/eclipse-workspace/BCConn/src/gateway/cd ../..
+ 1252  ls
+ 1253  cd application-go/
+ 1254  ls
+ 1255  ./asset-transfer-basic 
+ 1256  go -version
+ 1257  go --version
+ 1258  go version
+ 1259  ./asset-transfer-basic 
+ 1260  ls
+ 1261  nano assetTransfer.go 
+ 1262  cd /home/alex/eclipse-workspace/
+ 1263  ls
+ 1264  cd BCConn/
+ 1265  ls
+ 1266  cd target/classes/
+ 1267  ls
+ 1268  cd ..
+ 1269  ls
+ 1270  cd src/
+ 1271  ls
+ 1272  cd ..
+ 1273  ls
+ 1274  ls ~/Hyperledger-Fabric2-0-configurator/
+ 1275  ls ~/Hyperledger-Fabric2-0-configurator/Blockchain_Dumper/
+ 1276  ls
+ 1277  cp ~/Hyperledger-Fabric2-0-configurator/Blockchain_Dumper/cp_certs.sh .
+ 1278  ls
+ 1279  ./cp_certs.sh 
+ 1280  cat cp_certs.sh 
+ 1281  cd src/main/resources/fabricConfig/
+ 1282  ls
+ 1283  cd ../../
+ 1284  cd ..
+ 1285  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1286  ls
+ 1287  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1288  geany &
+ 1289  nano /etc/hosts
+ 1290  ifconfig
+ 1291  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1292  nano /etc/hosts
+ 1293  cd ~/gopath/src/github.com/
+ 1294  cd hyperledger/fabric-samples/
+ 1295  ls
+ 1296  cd Hyperledger-Fabric2-0-configurator/
+ 1297  . setContext.sh 
+ 1298  ls
+ 1299  ./generateAll.sh 
+ 1300  rm sacc.tar.gz 
+ 1301  . setContext.sh 
+ 1302  ./generateAll.sh 
+ 1303  find / -name 'connection-org1.yaml'
+ 1304  find / -name 'connection*.yaml'
+ 1305  nano /etc/hosts
+ 1306  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1307  nano /etc/hosts
+ 1308  ls
+ 1309  cd /home/alex/eclipse-workspace/BCConn
+ 1310  ls
+ 1311  cd src/main/resources/fabricConfig/
+ 1312  ls
+ 1313  geany connection_profile.yaml 
+ 1314  nano /etc/hosts
+ 1315  ls
+ 1316  cp connection_profile.yaml conn-backup.yaml
+ 1317  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1318  rm sacc.tar.gz 
+ 1319  . setContext.sh 0
+ 1320  ./generateAll.sh 
+ 1321  nano generator.py 
+ 1322  . setContext.sh 0
+ 1323  ./generateAll.sh 
+ 1324  nano /etc/hosts
+ 1325  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1326  docker images
+ 1327  . setContext.sh 0
+ 1328  ls
+ 1329  ./generateAll.sh 
+ 1330  ls
+ 1331  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1332  ls
+ 1333  cd crypto-config/peerOrganizations/org1.dredev.de/peers/peer0.org1.dredev.de/
+ 1334  ls
+ 1335  cd ../../../
+ 1336  cd ..
+ 1337  cd /home/alex/eclipse-workspace/
+ 1338  ;s
+ 1339  ls
+ 1340  cd BCConn/
+ 1341  ls
+ 1342  cat cp_certs.sh 
+ 1343  ./cp_certs.sh 
+ 1344  ls
+ 1345  geany src/main/resources/fabricConfig/connection_profile.yaml 
+ 1346  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1347  ./cp_certs.sh 
+ 1348  ls
+ 1349  cd wallets/
+ 1350  ls
+ 1351  rm admin.id 
+ 1352  ls
+ 1353  rm admin.id 
+ 1354  cd /home/alex/eclipse-workspace/BCConn/
+ 1355  ls
+ 1356  rm wallets/*
+ 1357  rm -rf target/
+ 1358  rm -rf bin/
+ 1359  ls
+ 1360  rm hs_err_pid8783.log 
+ 1361  rm -rf /var/lib/docker/containers/*
+ 1362  ls /var/lib/docker/containers
+ 1363  rm wallets/*
+ 1364  ls wallets/
+ 1365  cat cp_certs.sh 
+ 1366  nano cp_certs.sh 
+ 1367  ./cp_certs.sh 
+ 1368  cd ~/Hyperledger-Fabric2-0-configurator/
+ 1369  ls
+ 1370  cd Blockchain_Dumper/
+ 1371  ls
+ 1372  mvn
+ 1373  apt install maven
+ 1374  mvn clean
+ 1375  ls
+ 1376  geany src/main/java/gateway/FabricService.java 
+ 1377  mvn package
+ 1378  ls
+ 1379  cd target/
+ 1380  ls
+ 1381  cd ..
+ 1382  ls
+ 1383  nano cp_certs.sh 
+ 1384  cd target/classes/fabricConfig/
+ 1385  ls
+ 1386  nano cd ../
+ 1387  cd ../../../
+ 1388  ls
+ 1389  nano cp_certs.sh 
+ 1390  mvn clean
+ 1391  ls
+ 1392  cd ...
+ 1393  cd ..
+ 1394  cp -rf Blockchain_Dumper ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1395  ls
+ 1396  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1397  ls
+ 1398  cd Blockchain_Dumper/
+ 1399  ls
+ 1400  nano cp_certs.sh 
+ 1401  geany src/main/java/gateway/FabricService.java 
+ 1402  cd ../
+ 1403  ls
+ 1404  geany connection_profile.yaml 
+ 1405  nano /etc/hosts
+ 1406  cd Blockchain_Dumper/
+ 1407  ./cp_certs.sh 
+ 1408  mvn clean
+ 1409  mvn package
+ 1410  cd target/
+ 1411  ls
+ 1412  cp Blockchain_Dumper-1.0-SNAPSHOT.jar ..
+ 1413  ls
+ 1414  java -jar Blockchain_Dumper-1.0-SNAPSHOT.jar 
+ 1415  cd ..
+ 1416  ls
+ 1417  rm Blockchain_Dumper-1.0-SNAPSHOT.jar 
+ 1418  mvn clean package
+ 1419  cp target/Blockchain_Dumper-1.0-SNAPSHOT.jar .
+ 1420  ls
+ 1421  java -jar Blockchain_Dumper-1.0-SNAPSHOT.jar 
+ 1422  nano pom.xml 
+ 1423  cd src/main/java/gateway/
+ 1424  ls
+ 1425  nano FabricService.java 
+ 1426  cd ../../../
+ 1427  cd ...
+ 1428  cd ..
+ 1429  nano pom.xml 
+ 1430  mvn clean package
+ 1431  nano pom.xml 
+ 1432  ls
+ 1433  rm Blockchain_Dumper-1.0-SNAPSHOT.jar 
+ 1434  ls
+ 1435  mvn clean
+ 1436  nano pom.xml 
+ 1437  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1438  ls
+ 1439  ./cp_certs.sh 
+ 1440  ls
+ 1441  cd target/
+ 1442  ls
+ 1443  cd ..
+ 1444  cd target/
+ 1445  rm Blockchain_Dumper-1.0-SNAPSHOT.jar 
+ 1446  cd ..
+ 1447  ls
+ 1448  cd src/
+ 1449  ls
+ 1450  cd ..
+ 1451  ls
+ 1452  mkdir wallets
+ 1453  ls src/main/resources/
+ 1454  ls
+ 1455  java -jar Fabric.jar 
+ 1456  ls
+ 1457  ls wallets/
+ 1458  nano cp_certs.sh 
+ 1459  ls
+ 1460  nano cp_certs.sh 
+ 1461  ./cp_certs.sh 
+ 1462  ls wallets/
+ 1463  java -jar Fabric.jar 
+ 1464  rm **.jar
+ 1465  rm *.jsr
+ 1466  java -jar Fabric.jar 
+ 1467  rm *.jar
+ 1468  ls
+ 1469  java -jar Fabric.jar 
+ 1470  rm *.jsr
+ 1471  rm *.jar
+ 1472  rm wallets/*
+ 1473  java -jar Fabric.jar 
+ 1474  rm *.jar
+ 1475  rm wallets/*
+ 1476  java -jar Fabric.jar 
+ 1477  /home/alex/eclipse/java-2021-06/eclipse/eclipse &
+ 1478  cd ~/gopath/src/github.com/hyperledger/
+ 1479  cd fabric-samples/
+ 1480  cd Hyperledger-Fabric2-0-configurator/
+ 1481  . setContext.sh 0
+ 1482  ./generateAll.sh 
+ 1483  rm sacc.tar.gz 
+ 1484  ./generateAll.sh 
+ 1485  cd ~/gopath/src/github.com/hyperledger/fabric-samples/
+ 1486  cd Hyperledger-Fabric2-0-configurator/
+ 1487  ks
+ 1488  git init
+ 1489  ls
+ 1490  git add .
+ 1491  git status
+ 1492  git commit -m "Fist commit"
+ 1493  git remote add origin https://github.com/binunalex/hfconfig.git
+ 1494  cat .git
+ 1495  cd .git
+ 1496  ls
+ 1497  cd ..
+ 1498  rm -rf .git
+ 1499  ls
+ 1500  git init 
+ 1501  ls .git
+ 1502  git add .
+ 1503  git status
+ 1504  git commit -m "First init"
+ 1505  git remote add origin https://github.com/binunalex/hfconfig.git
+ 1506  git push -u origin master
+ 1507  nano key.txt
+ 1508  cat key.txt 
+ 1509  git push -u origin master
+ 1510  cd ..
+ 1511  mkdir caliper-workspace
+ 1512  cd caliper-workspace/
+ 1513  mkdir networks
+ 1514  mkdir benchmarks
+ 1515  mkdir workload
+ 1516  ls
+ 1517  npm install --only=prod @hyperledger/caliper-cli@0.4.2
+ 1518  npx caliper bind --caliper-bind-sut fabric:2.3.2
+ 1519  npx caliper bind --caliper-bind-sut fabric:2.2
+ 1520  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1521  nano key.txt 
+ 1522  peer version
+ 1523  ls
+ 1524  cd Hyperledger-Fabric2-0-configurator/
+ 1525  ls
+ 1526  cd Blockchain_Dumper/
+ 1527  ls
+ 1528  mkdir wallets
+ 1529  mvn clean
+ 1530  ls
+ 1531  cd ..
+ 1532  ls
+ 1533  cp -rf  Blockchain_Dumper ~/gopath/src/github.com/hyperledger/fabric-samples/
+ 1534  docker ps -a
+ 1535  cd Blockchain_Dumper/
+ 1536  nano cp_certs.sh 
+ 1537  nano pom.xml 
+ 1538  ls
+ 1539  ls src/main/
+ 1540  cd ..
+ 1541  cd Blockchain_Dumper/
+ 1542  cp -rf src /home/alex/eclipse-workspace/BCClient/
+ 1543  cd ..
+ 1544  l
+ 1545  ls
+ 1546  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1547  rm sacc.tar.gz 
+ 1548  . setContext.sh 1
+ 1549  . setContext.sh 0
+ 1550  ./generateAll.sh 
+ 1551  rm sacc.tar.gz 
+ 1552  ./generateAll.sh 
+ 1553  rm sacc.tar.gz 
+ 1554  ./generateAll.sh 
+ 1555  rm sacc.tar.gz 
+ 1556  ./generateAll.sh 
+ 1557  ls
+ 1558  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1559  . setContext.sh 0
+ 1560  ls
+ 1561  ./generateAll.sh 
+ 1562  . setContext.sh 0
+ 1563  ./generateAll.sh 
+ 1564  ps
+ 1565  kill -9 20921
+ 1566  kill -9 20922
+ 1567  ps
+ 1568  kill -9 20921
+ 1569  ps
+ 1570  cd ~/gopath/src/github.com/hyperledger/fabric-samples/
+ 1571  cd Hyperledger-Fabric2-0-configurator/
+ 1572  ks
+ 1573  ls
+ 1574  cd ..
+ 1575  git clone https://github.com/IBM/blockchain-application-using-fabric-java-sdk.git
+ 1576  cd blockchain-application-using-fabric-java-sdk/
+ 1577  ls
+ 1578  cd network
+ 1579  ls
+ 1580  ll
+ 1581  chmod a+rwx *.sh
+ 1582  ./teardown.sh 
+ 1583  geany &
+ 1584  cd ..
+ 1585  ls
+ 1586  cd java/
+ 1587  ls
+ 1588  mvn clean
+ 1589  mvn install
+ 1590  cd ../
+ 1591  cd ..
+ 1592  cd Hyperledger-Fabric2-0-configurator/
+ 1593  ls
+ 1594  cd ..
+ 1595  cd blockchain-application-using-fabric-java-sdk/
+ 1596  cd java/
+ 1597  cd ..
+ 1598  cd Hyperledger-Fabric2-0-configurator/
+ 1599  . setContext.sh 0
+ 1600  ls
+ 1601  ./generateAll.sh 
+ 1602  docker ps -a
+ 1603  nano generateAll.sh 
+ 1604  cat generateAll.sh 
+ 1605  docker rm -f $(docker ps -a -q)
+ 1606  docker rmi -f $(docker images -a -q)
+ 1607  cat generateAll.sh 
+ 1608  . setContext.sh 0
+ 1609  python3 generator.py
+ 1610  rm sacc.tar.gz 
+ 1611  python3 generator.py
+ 1612  curl -sSL https://bit.ly/2ysbOFE
+ 1613  curl -sSL https://bit.ly/2ysbOFE > samples.sh
+ 1614  geany samples.sh &
+ 1615  cd ..
+ 1616  mkdir binaries
+ 1617  cp Hyperledger-Fabric2-0-configurator/samples.sh .
+ 1618  ls
+ 1619  mv samples.sh binaries/
+ 1620  cd binaries/
+ 1621  chmod a+rwx samples.sh 
+ 1622  ./samples.sh 
+ 1623  ps
+ 1624  kill 28836
+ 1625  ps
+ 1626  kill -9 28813
+ 1627  ps
+ 1628  cp ../Hyperledger-Fabric2-0-configurator/samples.sh .
+ 1629  ls
+ 1630  cat samples.sh 
+ 1631  ./samples.sh 
+ 1632  cd ../Hyperledger-Fabric2-0-configurator/
+ 1633  ls
+ 1634  . setContext.sh 0
+ 1635  python3 generator.py
+ 1636  cp ../binaries/samples.sh .
+ 1637  cat samples.sh 
+ 1638  nano generateAll.sh 
+ 1639  . setContext.sh 
+ 1640  . setContext.sh 0
+ 1641  ./generateAll.sh 
+ 1642  rm sacc.tar.gz 
+ 1643  cat generateAll.sh 
+ 1644  chmod a+rwx samples.sh 
+ 1645  ./samples.sh 
+ 1646  python3 generator.py 
+ 1647  rm sacc.tar.gz 
+ 1648  python generator.py 
+ 1649  python3 generator.py 
+ 1650  cd /home/alex/eclipse-workspace/
+ 1651  ls
+ 1652  cd HFClient/
+ 1653  ls
+ 1654  mvn clean
+ 1655  ls
+ 1656  ls wallets/
+ 1657  geany pom.xml 
+ 1658  mvn install
+ 1659  ls
+ 1660  cp target/HFClient-0.0.1-SNAPSHOT-jar-with-dependencies.jar HFLib.jsr
+ 1661  ls
+ 1662  mv HFLib.jsr HFLib.jar
+ 1663  ls
+ 1664  mvn clean
+ 1665  ls
+ 1666  rm connection_profile.yaml 
+ 1667  rm ca.org1.dredev.de-cert.pem 
+ 1668  nano cp_certs.sh 
+ 1669  ./cp_certs.sh 
+ 1670  ls
+ 1671  mvn install
+ 1672  geany &
+ 1673  ls target/classes/
+ 1674  cp -rf target/HFClient-0.0.1-SNAPSHOT-jar-with-dependencies.jar HFClient.jar
+ 1675  ls
+ 1676  ll
+ 1677  cp HFClient.jar src/
+ 1678  cd src/
+ 1679  ls
+ 1680  java -cp HFClient.jar FabricService 
+ 1681  cp ../connection_profile.yaml .
+ 1682  cp ../ca.org1.dredev.de-cert.pem .
+ 1683  java -cp HFClient.jar FabricService 
+ 1684  cd ..
+ 1685  ls
+ 1686  cp cp_certs.sh prepareClient.sh
+ 1687  nano prepareClient.sh 
+ 1688  ./prepareClient.sh 
+ 1689  ls
+ 1690  mkdir CLI
+ 1691  cp pom.xml CLI/
+ 1692  cp -rf src/ CLI
+ 1693  cd CLI/
+ 1694  ls
+ 1695  ls src/
+ 1696  rm src/HFClient.jar 
+ 1697  rm src/ca.org1.dredev.de-cert.pem 
+ 1698  rm src/connection_profile.yaml 
+ 1699  ls
+ 1700  cd ..
+ 1701  cp prepareClient.sh CLI/
+ 1702  cd CLI/
+ 1703  ls
+ 1704  cat prepareClient.sh 
+ 1705  ls
+ 1706  ./prepareClient.sh 
+ 1707  ls
+ 1708  cat prepareClient.sh 
+ 1709  ls
+ 1710  cp ../cp_certs.sh .
+ 1711  ./prepareClient.sh 
+ 1712  cd ..
+ 1713  rm -rf CLI/
+ 1714  ls
+ 1715  cp prepareClient.sh launchClient.sh
+ 1716  nano launchClient.sh 
+ 1717  ls
+ 1718  cd src/
+ 1719  ls
+ 1720  rm ca.org1.dredev.de-cert.pem 
+ 1721  rm connection_profile.yaml 
+ 1722  ls
+ 1723  rm HFClient.jar 
+ 1724  ls
+ 1725  cd ..
+ 1726  ls
+ 1727  cat launchClient.sh 
+ 1728  ./launchClient.sh 
+ 1729  ls
+ 1730  cd CLI
+ 1731  ls
+ 1732  ls src/
+ 1733  rm -rf CLI
+ 1734  cd ..
+ 1735  rm -rf CLI
+ 1736  ls
+ 1737  mkdir CLI
+ 1738  rm -rf CLI
+ 1739  mkdir -p CLI/src
+ 1740  ls
+ 1741  cd CLI/src/
+ 1742  cd ..
+ 1743  ls
+ 1744  cp ../*.sh .
+ 1745  cp ../pom.xml .
+ 1746  cp ../src/*.java src/
+ 1747  ls
+ 1748  ls src/
+ 1749  mkdir wallets
+ 1750  cat prepareClient.sh 
+ 1751  ls
+ 1752  mvn clean
+ 1753  ./cp_certs.sh 
+ 1754  ls
+ 1755  mvn installl
+ 1756  mvn install
+ 1757  cat prepareClient.sh 
+ 1758  cp -f target/HFClient-0.0.1-SNAPSHOT-jar-with-dependencies.jar HFClient.jar
+ 1759  ls
+ 1760  ls src/
+ 1761  cp -f *.pem src
+ 1762  cp -f *.yaml src
+ 1763  cp -f HFClient.jar src
+ 1764  cd src/
+ 1765  ls
+ 1766  java -cp HFClient.jar FabricService
+ 1767  cd ../../
+ 1768  history 
+ 1769  ls
+ 1770  geany launchClient.sh 
+ 1771  ./launchClient.sh 
+ 1772  ls
+ 1773  geany src &
+ 1774  ./launchClient.sh 
+ 1775  geany src &
+ 1776  ./launchClient.sh 
+ 1777  geany src &
+ 1778  ./launchClient.sh 
+ 1779  geany src &
+ 1780  ./launchClient.sh 
+ 1781  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1782  ls
+ 1783  find / -name 'launchClient.sh'
+ 1784  ls
+ 1785  geany Makefile &
+ 1786  cd /home/alex/eclipse-workspace/HFClient/
+ 1787  ls
+ 1788  cat launchClient.sh 
+ 1789  ls
+ 1790  geany src/FabricService.java 
+ 1791  geany src/FabricService.java &
+ 1792  cd /home/alex/eclipse-workspace/HFClient/
+ 1793  la
+ 1794  ll
+ 1795  cd src/
+ 1796  ls
+ 1797  cd ..
+ 1798  geany src/FabricService.java &
+ 1799  ls
+ 1800  nano launchClient.sh 
+ 1801  nano prepareClient.sh 
+ 1802  nano cp_certs.sh 
+ 1803  nano launchClient.sh 
+ 1804  nano prepareClient.sh 
+ 1805  nano launchClient.sh 
+ 1806  nano prepareClient.sh 
+ 1807  ./launchClient.sh 
+ 1808  docker images
+ 1809  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1810  ls
+ 1811  rm sacc.tar.gz 
+ 1812  ls
+ 1813  . setContext.sh 0
+ 1814  ./generateAll.sh 
+ 1815  nano generateAll.sh 
+ 1816  nano samples.sh 
+ 1817  nano generateAll.sh 
+ 1818  cd ~/gopath/src/github.com/hyperledger/fabric-samples/
+ 1819  ls
+ 1820  cd Hyperledger-Fabric2-0-configurator/
+ 1821  ls
+ 1822  nano docker-compose.yaml 
+ 1823  cd ../../../
+ 1824  cd hyperledger/
+ 1825  cd fabric
+ 1826  ls
+ 1827  cd ../fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1828  ls
+ 1829  cp invoke.sh recompile.sh 
+ 1830  geany recompile.sh &
+ 1831  cat docker-compose.yaml 
+ 1832  ./recompile.sh 
+ 1833  make docker
+ 1834  cd ../../fabric
+ 1835  ls
+ 1836  geany Makefile 
+ 1837  make license
+ 1838  make build
+ 1839  make docker
+ 1840  make clean
+ 1841  make docker
+ 1842  docker images
+ 1843  docker tag hyperledger/fabric-orderer:latest orderer:compiled
+ 1844  docker tag hyperledger/fabric-peer:latest peer:compiled
+ 1845  docker images
+ 1846  cd ../fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1847  cat generateAll.sh 
+ 1848  . setContext.sh 0
+ 1849  ls
+ 1850  ./generateAll.sh 
+ 1851  docker ps -aqf "ancestor=peer:compiled"
+ 1852  docker ps -aqf "ancestor=orderer:compiled"
+ 1853  ls
+ 1854  cd HFClient/
+ 1855  ls
+ 1856  nano prepareClient.sh 
+ 1857  nano launchClient.sh 
+ 1858  cd ..
+ 1859  cd HFClient/
+ 1860  ls
+ 1861  rm prepareClient.sh 
+ 1862  ./launchClient.sh 
+ 1863  cd ..
+ 1864  git add .
+ 1865  history | grep 'git'
+ 1866  git commit -m "Example with client"
+ 1867  git push -u origin master
+ 1868  ls
+ 1869  cat key.txt 
+ 1870  ls
+ 1871  git push -u origin master
+ 1872  ls
+ 1873  geany README.md &
+ 1874  nano ~/.bashrc
+ 1875  . setContext.sh 0
+ 1876  ./generateAll.sh 
+ 1877  nano ~/.bashrc
+ 1878  cd /home/alex/eclipse-workspace/HFClient/
+ 1879  cd ..
+ 1880  cp -rf HFClient ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1881  source ~/.bashrc
+ 1882  nano ~/.bashrc
+ 1883  cd ~/gopath/src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1884  ls
+ 1885  . setContext.sh 0
+ 1886  ./generateAll.sh 
+ 1887  cd HFClient/
+ 1888  ./launchClient.sh 
+ 1889  nano ~/.bashrc
+ 1890  cd ..
+ 1891  cat key.txt 
+ 1892  git add ..
+ 1893  git add .
+ 1894  git commit -m "Installation instructions"
+ 1895  git push -u origin master
+ 1896  cd ../
+ 1897  cd ..
+ 1898  cd fabric
+ 1899  cd build/
+ 1900  cd images/
+ 1901  ls
+ 1902  cd peer/
+ 1903  ls
+ 1904  cd ../../
+ 1905  cd ..
+ 1906  find . -name 'Dockerfile'
+ 1907  cd images/peer/
+ 1908  ls
+ 1909  geany Dockerfile &
+ 1910  cd 
+ 1911  cd ~/gopath/src/github.com/hyperledger/fabric-samples/
+ 1912  ls
+ 1913  cat README.md 
+ 1914  cd Hyperledger-Fabric2-0-configurator/
+ 1915  ls
+ 1916  cat README.md 
+ 1917  git add .
+ 1918  git commit -m "Installation"
+ 1919  git push -u origin master
+ 1920  cd HFClient/
+ 1921  ls
+ 1922  git add .
+ 1923  git commit -m "Installation"
+ 1924  git commit -m "Installation1"
+ 1925  git add .
+ 1926  git commit -m "Installation2"
+ 1927  cd ...
+ 1928  cd ..
+ 1929  git add .
+ 1930  git commit -m "Installation3"
+ 1931  git push -u origin master
+ 1932  ls
+ 1933  rm -rf openssl/
+ 1934  geany Dockerfile
+ 1935  docker build -t getting-started .
+ 1936  geany Dockerfile
+ 1937  docker build -t getting-started .
+ 1938  geany Dockerfile
+ 1939  docker build -t getting-started .
+ 1940  geany Dockerfile
+ 1941  docker build -t getting-started .
+ 1942  geany Dockerfile
+ 1943  docker build -t getting-started .
+ 1944  geany Dockerfile
+ 1945  docker build -t getting-started .
+ 1946  geany Dockerfile
+ 1947  docker build -t getting-started .
+ 1948  docker images
+ 1949  docker run --publish-all getting-started
+ 1950  docker ps -a
+ 1951  docker exec -it 64642198ed71 /bin/bash
+ 1952  geany Dockerfile
+ 1953  docker rm -f $(docker ps -a -q)
+ 1954  docker images
+ 1955  docker rmi getting-started
+ 1956  docker build -t getting-started .
+ 1957  docker run --publish-all getting-started
+ 1958  docker ps -a
+ 1959  docker exec -it getting-started /bin/bash
+ 1960  docker run --rm -it --entrypoint bash getting-started
+ 1961  geany Dockerfile
+ 1962  docker rmi getting-started
+ 1963  docker rm -f $(docker ps -a -q)
+ 1964  docker rmi getting-started
+ 1965  docker build -t getting-started .
+ 1966  docker run --rm -it --entrypoint bash getting-started
+ 1967  geany Dockerfile
+ 1968  ls
+ 1969  cat Dockerfile 
+ 1970  history | grep 'make docker'
+ 1971  ls /root/gopath/src/github.com/hyperledger/fabric/images/orderer/
+ 1972  ls /root/gopath/src/github.com/hyperledger/fabric/build/images/orderer/
+ 1973  ls /root/gopath/src/github.com/hyperledger/fabric/build/images/peer/
+ 1974  docker images
+ 1975  cd $GOPATH/
+ 1976  cd src/github.com/hyperledger/fabric-samples/Hyperledger-Fabric2-0-configurator/
+ 1977  ls
+ 1978  nano docker-compose.yaml 
+ 1979  geany generator_scripts/gen_docker_compose.py 
+ 1980  git add .
+ 1981  history | grep 'git'
+ 1982  git commit -m "Standard images"
+ 1983  git push -u origin master
+ 1984  git pull origin master
+ 1985  geany generator_scripts/gen_docker_compose.py 
+ 1986  git add .
+ 1987  git commit -m "Standard images"
+ 1988  git push -u origin master
+ 1989  pip3 install ruamel
+ 1990  nano /etc/hists
+ 1991  nano /etc/hosts
+ 1992  ls
+ 1993  cd HFClient/
+ 1994  ls
+ 1995  cd $GOPATH/
+ 1996  cd src/github.com/hyperledger/fabric-samples/
+ 1997  ls
+ 1998  cd Hyperledger-Fabric2-0-configurator/
+ 1999  ls
+ 2000  cd HFClient/
+ 2001  ls
+ 2002  nano cp_certs.sh 
+ 2003  nano launchClient.sh 
+ 2004  nano cp_certs.sh 
+ 2005  ls ../
+ 2006  cd ..
+ 2007  rm sacc.tar.gz 
+ 2008  geany generator_scripts/gen_crypto_config.py 
+ 2009  docker images
+ 2010  geany generator_scripts/gen_docker_compose.py 
+ 2011  . setContext.sh 0
+ 2012  ./generateAll.sh 
+ 2013  cd HFClient/
+ 2014  ls
+ 2015  ./launchClient.sh 
+ 2016  ls
+ 2017  cat launchClient.sh 
+ 2018  ls
+ 2019  rm ca.org1.dredev.de-cert.pem 
+ 2020  rm HFClient.jar 
+ 2021  cd ..
+ 2022  ls
+ 2023  cat generateAll.sh 
+ 2024  rm sacc.tar.gz 
+ 2025  cat install.sh 
+ 2026  ls HFClient/
+ 2027  rm HFClient/connection_profile.yaml 
+ 2028  cd HFClient/
+ 2029  ls
+ 2030  rm -rf bin
+ 2031  cat launchClient.sh 
+ 2032  cd ..
+ 2033  ls
+ 2034  history 
+ 2035  nano generateAll.sh 
+ 2036  cd HFClient/
+ 2037  ls
+ 2038  cat launchClient.sh 
+ 2039  ls
+ 2040  ls wallets/
+ 2041  ls
+ 2042  ls wallets/
+ 2043  cd ..
+ 2044  . setContext.sh 0
+ 2045  ./generateAll.sh 
+ 2046  rm sacc.tar.gz 
+ 2047  ./generateAll.sh 
+ 2048  cd HFClient/
+ 2049  ls
+ 2050  rm CLI/
+ 2051  ls CLI/
+ 2052  nano launchClient.sh 
+ 2053  rm -rf CLI/
+ 2054  ls
+ 2055  rm wallets/
+ 2056  rm -rf wallets/
+ 2057  ;s
+ 2058  ls
+ 2059  cd ..
+ 2060  ls
+ 2061  history > histlog.txt

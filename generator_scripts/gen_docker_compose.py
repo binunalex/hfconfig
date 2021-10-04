@@ -3,13 +3,13 @@ from generator_scripts.format import bcolors, NetworkConfiguration
 import os
 from ruamel.yaml.scalarstring import SingleQuotedScalarString
 
-PEER_IMAGE =  "hyperledger/fabric-peer:2.0"  #"peer:compiled"
-ORDERER_IMAGE =  "hyperledger/fabric-orderer:2.0" #"orderer:compiled"
-CERT_AUTH_IMAGE = "hyperledger/fabric-ca:1.4"
-CLIENT_IMAGE = "hyperledger/fabric-tools"
+PEER_IMAGE =  "hyperledger/fabric-peer:latest"  #"peer:compiled"
+ORDERER_IMAGE =  "hyperledger/fabric-orderer:latest" #"orderer:compiled"
+CERT_AUTH_IMAGE = "hyperledger/fabric-ca:latest"
+CLIENT_IMAGE = "hyperledger/fabric-tools:latest"
 STORAGE_IMAGE = "hyperledger/fabric-couchdb"
-ZOOKEEPER = "hyperledger/fabric-zookeeper"
-KAFKA = "hyperledger/fabric-kafka"
+ZOOKEEPER = "hyperledger/fabric-zookeeper:latest"
+KAFKA = "hyperledger/fabric-kafka:latest"
 
 def generate_docker_compose(_network_config: NetworkConfiguration,
                             _orderers,
