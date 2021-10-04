@@ -65,6 +65,7 @@ Clone the example repository into the folder and set up the envoronment: <br>
 ``` git clone https://github.com/binunalex/hfconfig.git ```   <br>
 ``` cd hfconfig```   <br>
 ``` echo "export PROTPATH=$(pwd)" >>~/.bashrc```   <br>
+``` source ~/.bashrc```   <br>
 
 
 Then run the following commands: <br>
