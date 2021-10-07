@@ -12,7 +12,7 @@ Then install [Python 3.7](https://linuxize.com/post/how-to-install-python-3-7-on
 
 Install [NodeJS, version 12](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
 Install [the latest Docker](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
-Download and install Golang: <br>
+Download and install Golang (here is 1.16.4 but you may get the latest one from [here](https://golang.org/dl/) <br>
 
 ```sudo apt-get -y update && sudo apt-get -y upgrade```  <br>
 ```wget https://dl.google.com/go/go1.16.4.linux-amd64.tar.gz``` <br>
