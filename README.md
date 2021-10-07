@@ -10,8 +10,8 @@ First install [Java SDK 11](https://www.digitalocean.com/community/tutorials/how
 Then install [Python 3.7](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/). In addition install the following packets: <br>
 ```pip3 install ruamel.yaml```
 
-Install [NodeJS](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
-Install [Docker](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
+Install [NodeJS, version 12](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
+Install [the latest Docker](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
 Download and install Golang: <br>
 
 ```sudo apt-get -y update && sudo apt-get -y upgrade```  <br>
@@ -32,6 +32,7 @@ Configure the Go-related environment variables as follows: <br>
 
 ``` echo 'GOROOT=$HOME/go' >> ~/.bashrc ``` 	<br>
 ``` echo 'GOPATH=$HOME/gopath' >> ~/.bashrc >> ~/.bashrc ``` <br>
+``` mkdir -p $GOROOT/bin && mkdir -p $GOPATH/bin``` <br> 
 ``` echo 'PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.bashrc ``` <br> 
 ``` echo 'PATH=$HOME/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH' >> ~/.bashrc```  <br>
 ``` source ~/.bashrc ```
