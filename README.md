@@ -4,9 +4,10 @@ We use Markdown and Ubuntu 18: [link to Markdown](https://guides.github.com/feat
 
 <h2> Prerequisites: </h2>
 
-Assuming the $HOME variable points to your home directory <br>
+Assume the $HOME variable points to your home directory. <br>
 Update the distribution: ```sudo apt-get -y update && sudo apt-get -y upgrade```  <br>
-First install [Java SDK 11](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04). <br>
+Install the C++ developer tools: ```sudo apt-get -y update && sudo apt-get -y install build-essential ```  <br>
+Install [Java SDK 11](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04). <br>
 Then install [Python 3.7](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/). In addition install the following packets: <br>
 ```pip3 install ruamel.yaml```
 
@@ -14,7 +15,6 @@ Install [NodeJS, version 12](https://computingforgeeks.com/how-to-install-nodejs
 Install [the latest Docker](https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04) <br>
 Download and install Golang. This is 1.16.4 but you may get the latest one from [here](https://golang.org/dl/) <br>
 
-```sudo apt-get -y update && sudo apt-get -y upgrade```  <br>
 ```wget https://dl.google.com/go/go1.16.4.linux-amd64.tar.gz``` <br>
 ```sudo tar -xvf go1.16.4.linux-amd64.tar.gz```<br>
 
