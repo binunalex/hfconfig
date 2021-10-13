@@ -31,7 +31,7 @@ Install [Hyperledger Fabric Binaries and Samples](https://hyperledger-fabric.rea
 Configure the Go-related environment variables as follows: <br>
 
 ``` echo 'GOROOT=$HOME/go' >> ~/.bashrc ``` 	<br>
-``` echo 'GOPATH=$HOME/gopath' >> ~/.bashrc >> ~/.bashrc ``` <br>
+``` echo 'GOPATH=$HOME/gopath' >> ~/.bashrc ``` <br>
 ``` mkdir -p $GOROOT/bin && mkdir -p $GOPATH/bin``` <br> 
 ``` echo 'PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.bashrc ``` <br> 
 ``` echo 'PATH=$HOME/gopath/src/github.com/hyperledger/fabric-samples/bin:$PATH' >> ~/.bashrc```  <br>
