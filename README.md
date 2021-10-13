@@ -82,7 +82,7 @@ This script associates the DNS names of all Hyperledger members (peers,orderers 
 Set the working directory: ```cd $GOPATH/src/github.com/hyperledger/fabric-samples/hfconfig```.  <br>
 Now launch the prototype:  <br> 
   
-``` . setContext 0 ``` <br> 
+``` . setContext.sh 0 ``` <br> 
 ``` ./generateAll.sh```   <br> 
 
 Wait for a while. Then run a client:  <br> 
