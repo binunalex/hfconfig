@@ -45,7 +45,7 @@ Change the directory into the Fabric projects:
 ``` cd $HOME/gopath/src/github.com/hyperledger ```
 
 Download the source code as described [here](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04): <br>
-``` git clone https://github.com/hyperledger/fabric.git ```  <br>
+``` git clone https://github.com/hyperledger/fabric.git && git checkout master```  <br>
 ``` cd $GOPATH/src/github.com/hyperledger/fabric ```   <br>
 
 To rebuild the entire Hyperledger distribution from scratch, you have to run the commands: <br>
