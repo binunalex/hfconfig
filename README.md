@@ -10,7 +10,7 @@ Then install [Python 3.7](https://linuxize.com/post/how-to-install-python-3-7-on
 ```pip3 install ruamel.yaml```
 
 Install [NodeJS, version 12](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
-Install [the latest Docker](https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04) <br>
+Install [the latest Docker](https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04) and [Docker Compose](https://docs.docker.com/compose/install/) <br>
 Download and install Golang. This is 1.16.4 but you may get the latest one from [here](https://golang.org/dl/) <br>
 
 ```wget https://dl.google.com/go/go1.16.4.linux-amd64.tar.gz``` <br>
