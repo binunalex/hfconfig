@@ -43,7 +43,7 @@ Change the directory into the Fabric projects:
 ``` cd $HOME/gopath/src/github.com/hyperledger ```
 
 Download the source code as described [here](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04): <br>
-``` git clone -b master https://github.com/hyperledger/fabric.git```  <br>
+``` git clone https://github.com/hyperledger/fabric.git```  <br>
 ``` cd $GOPATH/src/github.com/hyperledger/fabric ```   <br>
 
 To rebuild the entire Hyperledger distribution from scratch, you have to run the commands: <br>
@@ -60,7 +60,7 @@ the **hyperledger/** word, like **hyperledger/fabric-orderer**. These images wil
 <h2> Launch the local Hyperledger prototype: </h2>
 
 Clone the example repository into the folder and set up the envoronment: <br>
-``` $HOME/gopath/src/github.com/hyperledger/fabric-samples``` <br>
+``` cd $HOME/gopath/src/github.com/hyperledger/fabric-samples``` <br>
 ``` git clone https://github.com/binunalex/hfconfig.git ```   <br>
 ``` cd hfconfig```   <br>
 ``` echo "export PROTPATH=$(pwd)" >>~/.bashrc```   <br>
