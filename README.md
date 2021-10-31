@@ -27,7 +27,7 @@ Create the folder **gopath** you will out all your Go projects into: <br>
 Install [Hyperledger Fabric Binaries and Samples](https://hyperledger-fabric.readthedocs.io/en/release-2.2/install.html#) into the above mentioned folder: <br>
 ``` curl -sSL https://bit.ly/2ysbOFE | bash -s ```
 
-Configure the Go-related environment variables as follows: <br>
+**Login as root (su -)** and configure the Go-related environment variables as follows: <br>
 
 ``` echo 'GOROOT=$HOME/go' >> ~/.bashrc ``` 	<br>
 ``` echo 'GOPATH=$HOME/gopath' >> ~/.bashrc ``` <br>
@@ -60,11 +60,13 @@ the **hyperledger/** word, like **hyperledger/fabric-orderer**. These images wil
 
 <h2> Launch the local Hyperledger prototype: </h2>
 
-Clone the example repository into the folder and set up the envoronment: <br>
+Clone the example repository into the folder and set up the environment: <br>
 ``` cd $HOME/gopath/src/github.com/hyperledger/fabric-samples``` <br>
 ``` git clone https://github.com/binunalex/hfconfig.git ```   <br>
 ``` cd hfconfig```   <br>
-``` echo "export PROTPATH=$(pwd)" >>~/.bashrc```   <br>
+
+Login as ROOT and update the environment: <br>
+``` echo "PROTPATH=$(pwd)" >> ~/.bashrc```   <br>
 ``` source ~/.bashrc```   <br>
 
 
