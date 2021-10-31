@@ -65,7 +65,7 @@ Clone the example repository into the folder and set up the environment: <br>
 ``` git clone https://github.com/binunalex/hfconfig.git ```   <br>
 ``` cd hfconfig```   <br>
 
-Login as ROOT and update the environment: <br>
+**Login as ROOT** and update the environment: <br>
 ``` echo "PROTPATH=$(pwd)" >> ~/.bashrc```   <br>
 ``` source ~/.bashrc```   <br>
 
