@@ -9,6 +9,9 @@ Install [Java SDK 11](https://www.digitalocean.com/community/tutorials/how-to-in
 Then install [Python 3.7](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/). In addition install the following packets: <br>
 ```pip3 install ruamel.yaml```
 
+Remove the previous NodeJS installations: <br>
+```apt-get purge --auto-remove nodejs npm``` <br>
+
 Install [NodeJS, version 12](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
 Install [the latest Docker](https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04) and [Docker Compose](https://docs.docker.com/compose/install/).<br>
 Make sure that Docker-related commands like **docker ps** (listing all containers) run without using [root privileges](https://github.com/sindresorhus/guides/blob/main/docker-without-sudo.md). <br>
