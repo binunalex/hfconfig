@@ -2,15 +2,15 @@
 
 <h2> Prerequisites: </h2>
 
-Assume the $HOME variable points to your home directory. <br>
-Update the distribution: ```sudo apt-get -y update && sudo apt-get -y upgrade```  <br>
-Install the C++ developer tools: ```sudo apt-get -y update && sudo apt-get -y install build-essential maven```  <br>
-Install [Java SDK 11](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04). <br>
-Then install [Python 3.7](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/). In addition install the following packets: <br>
-```pip3 install ruamel.yaml```
+Install [Sagemath](https://www.sagemath.org/download-windows.html) on your computer. <br>
+Install [Java](https://www.oracle.com/java/technologies/downloads/).
 
-Remove the previous NodeJS installations: <br>
-```apt-get purge --auto-remove nodejs npm``` <br>
+Write a simple Sage script that produces the desired output (it may be more complicated, for example, Lagrange [interpolation](https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/polynomial_ring.html#sage.rings.polynomial.polynomial_ring.PolynomialRing_field.lagrange_polynomial):
+
+```    print("Hello World")   ```<br>
+```    print(2^3)             ```<br>
+
+
 
 Install [NodeJS, version 12](https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/) <br>
 Install [the latest Docker](https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04) and [Docker Compose](https://docs.docker.com/compose/install/).<br>
