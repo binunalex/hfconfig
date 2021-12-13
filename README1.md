@@ -6,11 +6,11 @@ Install [Java](https://www.oracle.com/java/technologies/downloads/).
 
 Write a simple Sage script that produces the desired output (https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/polynomial_ring.html#sage.rings.polynomial.polynomial_ring.PolynomialRing_field.lagrange_polynomial):
 
-``` p=11 ```
-``` R.<x>=PolynomialRing(GF(p)) ```
-``` points=[(1,1), (3,3)] ```
-``` f=R.lagrange_polynomial(points) ```
-``` print(f) ```
+``` p=11 ``` <br>
+``` R.<x>=PolynomialRing(GF(p)) ``` <br>
+``` points=[(1,1), (3,3)] ``` <br>
+``` f=R.lagrange_polynomial(points) ``` <br>
+``` print(f) ``` <br>
 
 Save this code in the script **first.sage**. It can be executed from the command line using the command ```sage /path/to/myscript.sage```.
 
