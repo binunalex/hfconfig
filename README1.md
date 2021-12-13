@@ -16,9 +16,9 @@ Save this code in the script **first.sage**. It can be executed from the command
 
 The goal is to use the numerical analysis features of Sage that are not implemented in Java. You will run a Sage script with the relevant function (Lagrange [interpolation]).
 
- ``` public class ProcessOutputExample {``` <br>
-        ```     public static void main(String[] arguments) throws IOException,InterruptedException { ``` <br>
-            ```     System.out.println(getProcessOutput()); ``` <br>
+ ``` public class ProcessOutputExample {   ``` <br>
+ ```     public static void main(String[] arguments) throws IOException,InterruptedException { ``` <br>
+            ```      System.out.println(getProcessOutput()); ``` <br>
         ```     } ```  <br>
 
     public static String getProcessOutput() throws IOException, InterruptedException {
