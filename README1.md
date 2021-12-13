@@ -14,7 +14,7 @@ Write a simple Sage script that produces the desired output (https://doc.sagemat
 
 Save this code in the script **first.sage**. It can be executed from the command line using the command ```sage /path/to/myscript.sage```.
 
-The goal is to use the numerical analysis features of Sage that are not implemented in Java. You will run a Sage script with the relevant function (Lagrange [interpolation]).
+The goal is to use the numerical analysis features of Sage that are not implemented in Java. From a Java module, you will run a Sage script with the relevant function (Lagrange [interpolation]). The output of Lagrange interpolation is captured by your Java:
 
  ```public class ProcessOutputExample {   ``` <br>
  ```   public static void main(String[] arguments) throws IOException,InterruptedException { ``` <br>
