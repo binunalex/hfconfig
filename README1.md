@@ -4,7 +4,8 @@
 Install [Sagemath](https://www.sagemath.org/download-windows.html) on your computer. <br>
 Install [Java](https://www.oracle.com/java/technologies/downloads/).
 
-Write a simple Sage script that produces the desired output, using the [Lagrange] (https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/polynomial_ring.html#sage.rings.polynomial.polynomial_ring.PolynomialRing_field.lagrange_polynomial) interpolation:
+Write a simple Sage script that produces the desired output, 
+using the [Lagrange](https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/polynomial_ring.html#sage.rings.polynomial.polynomial_ring.PolynomialRing_field.lagrange_polynomial) interpolation:
 
 ``` p=11 ``` <br>
 ``` R.<x>=PolynomialRing(GF(p)) ``` <br>
