@@ -16,11 +16,11 @@ Save this code in the script **first.sage**. It can be executed from the command
 
 The goal is to use the numerical analysis features of Sage that are not implemented in Java. You will run a Sage script with the relevant function (Lagrange [interpolation]).
 
- public class ProcessOutputExample
- {
-    public static void main(String[] arguments) throws IOException,InterruptedException {
-        System.out.println(getProcessOutput());
-    }
+ ``` public class ProcessOutputExample ```
+ ``` { ```
+    ``` public static void main(String[] arguments) throws IOException,InterruptedException { ```
+        ``` System.out.println(getProcessOutput()); ```
+    ``` } ``` 
 
     public static String getProcessOutput() throws IOException, InterruptedException {
          ProcessBuilder processBuilder = new ProcessBuilder("sage", "first.sage");
