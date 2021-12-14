@@ -2,11 +2,11 @@
 
 <h2> Solution based on Java: </h2>
 
-The solution is based on the [Rings](https://rings.readthedocs.io/en/latest/guide.html) library
+The Lagrange interpolation is based on the [Rings](https://rings.readthedocs.io/en/latest/guide.html) library that implements a lot of numerical algebra methods.
 
 First install [Java](https://www.oracle.com/java/technologies/downloads/).
 
-Then import the Rings library by means of e.g. Maven :
+Then import the Rings library either by downloading the [Jar](https://jar-download.com/artifacts/cc.redberry/rings/2.5.7) file or by means of e.g. Maven :
 
 ``` <dependency> ``` <br>
 ```    <groupId>cc.redberry</groupId> ``` <br>
@@ -14,31 +14,38 @@ Then import the Rings library by means of e.g. Maven :
 ```    <version>2.5.7</version> ``` <br>
 ``` </dependency> ``` <br>
 
-Save this code in the script **first.sage**. It can be executed from the command line using the command ```sage /path/to/myscript.sage```.
 
-The goal is to use the numerical analysis features of Sage that are not implemented in Java. From a Java module, you will run a Sage script with the relevant function (Lagrange [interpolation]). The output of Lagrange interpolation is captured by your Java:
+Here is the Java code:
 
- ```public class ProcessOutputExample {   ``` <br>
- ```   public static void main(String[] arguments) throws IOException,InterruptedException { ``` <br>
-            ```     System.out.println(getProcessOutput()); ``` <br>
-        ```   } ```  <br>
+import cc.redberry.rings.*;
+import cc.redberry.rings.poly.*;
+import cc.redberry.rings.poly.univar.*;
+import cc.redberry.rings.poly.univar.UnivariateInterpolation.InterpolationZp64;
+import cc.redberry.rings.bigint.BigInteger;
 
-    public static String getProcessOutput() throws IOException, InterruptedException {
-         ProcessBuilder processBuilder = new ProcessBuilder("sage", "first.sage");
+import static cc.redberry.rings.poly.PolynomialMethods.*;
+import static cc.redberry.rings.Rings.*;
 
-         processBuilder.redirectErrorStream(true);
+public class Main {
 
-         Process process = processBuilder.start();
-         StringBuilder processOutput = new StringBuilder();
+	public static void main(String[] args) {
+	
+		long[] points = {1L, 2L, 3L, 12L};
+		long[] values = {3L, 2L, 1L, 6L};
+		
+		long point0=0L;
+       
+		//building the Lagrange polynomial
+		UnivariatePolynomialZp64 result = new UnivariateInterpolation.InterpolationZp64(Zp64(17)).update(points, values).getInterpolatingPolynomial();
+		
+		long v1 = result.evaluate(point0);
+		System.out.println(v1);
+		   
 
-         try (BufferedReader processOutputReader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
-             String readLine;
+	}
 
-             while ((readLine = processOutputReader.readLine()) != null)
-                  processOutput.append(readLine + System.lineSeparator());
-            process.waitFor();
-         }
+}
 
-         return processOutput.toString().trim();
-    }}
+
+ 
 
