@@ -1,17 +1,18 @@
 <h1> Installation Instructions: </h1>
 
+<h2> Solution based on Java: </h2>
 
-Install [Sagemath](https://www.sagemath.org/download-windows.html) on your computer. <br>
-Install [Java](https://www.oracle.com/java/technologies/downloads/).
+The solution is based on the [Rings](https://rings.readthedocs.io/en/latest/guide.html) library
 
-Write a simple Sage script that produces the desired output, 
-using the [Lagrange](https://doc.sagemath.org/html/en/reference/polynomial_rings/sage/rings/polynomial/polynomial_ring.html#sage.rings.polynomial.polynomial_ring.PolynomialRing_field.lagrange_polynomial) interpolation:
+First install [Java](https://www.oracle.com/java/technologies/downloads/).
 
-``` p=11 ``` <br>
-``` R.<x>=PolynomialRing(GF(p)) ``` <br>
-``` points=[(1,1), (3,3)] ``` <br>
-``` f=R.lagrange_polynomial(points) ``` <br>
-``` print(f) ``` <br>
+Then import the Rings library by means of e.g. Maven :
+
+``` <dependency> ``` <br>
+```    <groupId>cc.redberry</groupId> ``` <br>
+```    <artifactId>rings</artifactId> ``` <br>
+```    <version>2.5.7</version> ``` <br>
+``` </dependency> ``` <br>
 
 Save this code in the script **first.sage**. It can be executed from the command line using the command ```sage /path/to/myscript.sage```.
 
