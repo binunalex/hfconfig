@@ -8,14 +8,13 @@ First install [Java](https://www.oracle.com/java/technologies/downloads/).
 
 Then import the Rings library either by downloading the [Jar](https://jar-download.com/artifacts/cc.redberry/rings/2.5.7) file or by means of e.g. Maven :
 
-``` <dependency> 
+``` 
+<dependency> 
        <groupId>cc.redberry</groupId> 
        <artifactId>rings</artifactId>
        <version>2.5.7</version> 
-    </dependency> 
+</dependency> 
 ``` 
-    <br>
-
 
 Here is the Java code:
 
