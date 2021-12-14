@@ -17,23 +17,25 @@ Then import the Rings library either by downloading the [Jar](https://jar-downlo
 
 Here is the Java code:
 
-```import cc.redberry.rings.*; ```<br>
-```import cc.redberry.rings.poly.*; ```<br>
-```import cc.redberry.rings.poly.univar.*; ```<br>
-```import cc.redberry.rings.poly.univar.UnivariateInterpolation.InterpolationZp64; ```<br>
-```import cc.redberry.rings.bigint.BigInteger; ```<br>
-```import static cc.redberry.rings.poly.PolynomialMethods.*; ```<br>
-```import static cc.redberry.rings.Rings.*; ```<br>
-``` public class Main {  <br>
-          public static void main(String[] args) {  ``` <br> 
-```		long[] points = {1L, 2L, 3L, 12L}; ``` <br>
-```		long[] values = {3L, 2L, 1L, 6L};```  <br>
-```		long point0=0L; ```<br>
-```		UnivariatePolynomialZp64 result = new UnivariateInterpolation.InterpolationZp64(Zp64(17)).update(points, values).getInterpolatingPolynomial(); ```<br>
-```		long v1 = result.evaluate(point0);``` <br>
-```		System.out.println(v1);``` <br>
-```	} ``` <br>
-``` } ``` <br>
+```
+import cc.redberry.rings.*; <br>
+import cc.redberry.rings.poly.*; <br>
+import cc.redberry.rings.poly.univar.*; <br>
+import cc.redberry.rings.poly.univar.UnivariateInterpolation.InterpolationZp64; <br>
+import cc.redberry.rings.bigint.BigInteger; <br>
+import static cc.redberry.rings.poly.PolynomialMethods.*; <br>
+import static cc.redberry.rings.Rings.*; <br>
+public class Main {  <br>
+        public static void main(String[] args) {   <br> 
+		long[] points = {1L, 2L, 3L, 12L};  <br>
+		long[] values = {3L, 2L, 1L, 6L};  <br>
+		long point0=0L; <br>
+		UnivariatePolynomialZp64 result = new UnivariateInterpolation.InterpolationZp64(Zp64(17)).update(points, values).getInterpolatingPolynomial(); <br>
+		long v1 = result.evaluate(point0); <br>
+		System.out.println(v1); <br>
+	}  <br>
+ }  <br>
+```
 
 
  
