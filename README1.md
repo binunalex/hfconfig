@@ -30,8 +30,8 @@ public class Main {
         public static void main(String[] args) {   
 		long[] points = {1L, 2L, 3L, 12L};  
 		long[] values = {3L, 2L, 1L, 6L};  
-		long point0=0L; <br>
-		UnivariatePolynomialZp64 result = new UnivariateInterpolation.InterpolationZp64(Zp64(17)).update(points, values).getInterpolatingPolynomial(); 
+		long point0=0L; 
+		UnivariatePolynomialZp64 lagr = UnivariateInterpolation.interpolateLagrange(997, points, values); 
 		long v1 = result.evaluate(point0); 
 		System.out.println(v1); 
 	}  
