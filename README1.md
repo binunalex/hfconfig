@@ -38,6 +38,8 @@ public class Main {
  }  
 ```
 
+Another ready Java implementation can be found [here](https://github.com/codahale/shamir).
+
 
  
 
