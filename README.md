@@ -97,4 +97,8 @@ Wait for a while. Then run a client:  <br>
 You will be running a few queries - modification and fetch.
 
 
+<h2> Time To Commit: </h2>
 
+When a transaction is sent from a client, Hyperledger Fabric accepts it and sends the response back to the client, **before the transaction is added to block and committed**. This is called "time to response". However, often we want to know not only time to response for a transaction, but also the time to its commit. This is called "time to finality". 
+
+We can record time to finality via the BlockListener interface, look at my example, Line 162-176. Record the time to finality for a few transactions and compare it to "time to return" recorded in Lines 93-97.
