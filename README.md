@@ -103,4 +103,4 @@ When a transaction is sent from a client, Hyperledger Fabric accepts it and send
 
 We can record time to finality via the BlockListener interface, look at my [example](https://github.com/binunalex/hfconfig/blob/master/FabricService-Event.java), Line 162-176. Record the time to finality for a few transactions and compare it to "time to return" recorded in Lines 93-97.
 
-To run the new program, replace the content of the file HFClient/src/FabricService.java by the code of my [example](https://github.com/binunalex/hfconfig/blob/master/FabricService-Event.java) and recompile.
+To run the new program, replace the content of the file [FabricService.java](https://github.com/binunalex/hfconfig/blob/master/HFClient/src/FabricService.java) by the code of my [example](https://github.com/binunalex/hfconfig/blob/master/FabricService-Event.java) and recompile.
